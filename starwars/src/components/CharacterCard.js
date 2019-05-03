@@ -1,10 +1,11 @@
+
 import React from 'react';
 
 function CharacterCard(props) {
   return (
     <div className="card-container">
       {props.starwarsChars.map( char => {
-          return <ul className="character-card">    
+          return <ul className="character-card" key= {char.name}>    
             <h3>{char.name}</h3>
             <li><strong>Gender:</strong> {char.gender}</li>
             <li><strong>Height:</strong> {char.height}</li>
@@ -12,12 +13,11 @@ function CharacterCard(props) {
             <li><strong>Skin Color:</strong> {char.skin_color}</li>
             <li><strong>Hair Color:</strong> {char.hair_color}</li>
             <li><strong>Eye Color:</strong> {char.eye_color}</li>
-          </ul>
-      })}
+          </ul> 
+     })}
     
     </div>
   )
-
 }
 
 export default CharacterCard;
