@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import CharacterCard from './components/CharacterCard';
 import './App.css';
 
