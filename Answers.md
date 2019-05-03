@@ -10,6 +10,8 @@
 
 3.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
+    - A functional component is just a JavaScript function which accepts props as an argument and returns a React element. As a class component it needs a little more details. It requires you to extend from React.Component and create a render function which returns a React element. This requires more code but will also give you some benefits which you will see later on.
+
 4.  Describe state.
 
     - State is the data that our components will have access to. And when we pass that state around, we call it props. If a component holds it’s own state, and needs to give that state data to another component, we pass that state around as Props.
